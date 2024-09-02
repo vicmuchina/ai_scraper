@@ -1,0 +1,7 @@
+__pycache__/
+ai_scraperbot/
+*.py[cod]
+*.exe
+*.png
+.env
+
