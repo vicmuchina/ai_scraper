@@ -6,7 +6,7 @@ from scraper import (extract_body_content
                       , split_dom_content)
 
 st.title("AI Scraper")
-url = st.text_input("Enter URL")
+url = st.text_input("Enter full URL,include https://")
 if st.button("Scrape"):
     st.write(f"Scraping {url}")
     # Call the scraper function here
