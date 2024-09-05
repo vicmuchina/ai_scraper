@@ -46,7 +46,8 @@ def parse_with_mistral(parse_description, dom_content):
     
     for i,chunk in enumerate(dom_content, start=1):
         chat_completion = client.chat.completions.create(
-        model="mistralai/Mistral-7B-Instruct-v0.2",
+        #model="mistralai/Mistral-7B-Instruct-v0.2",
+        model="meta-llama/Meta-Llama-3-70B-Instruct-Turbo",
         messages=[
             {"role": "system", "content":  template.format(dom_content=chunk, parse_description=parse_description)},
             {"role": "user", "content": parse_description},

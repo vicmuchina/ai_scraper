@@ -4,4 +4,5 @@ ai_scraperbot/
 *.exe
 *.png
 .env
+venv/
 
