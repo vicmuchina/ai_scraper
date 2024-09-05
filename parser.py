@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-api_key = str(os.getenv("API_KEY"))
+api_key = os.getenv("API_KEY")
 client = openai.OpenAI(
     api_key = api_key,
     base_url="https://api.aimlapi.com",
